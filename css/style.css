@@ -12,16 +12,12 @@ body {font-size: 13pt;color:#222;background:#fbfbfb;font-family:"Helvetica Neue"
 h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
 
 h1 {font-size:3em;line-height:1;margin-bottom:0.5em;margin-top:2em;}
-
 h2 {font-size:2em;margin-bottom:0.75em;margin-top:1.5em;}
-
 h3 {font-size:1.5em;line-height:1;margin-top:1.5em;}
-
 h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
-
 h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
-
 h6 {font-size:1em;font-weight:bold;}
+
 
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
 
@@ -63,8 +59,10 @@ li {margin-bottom: 0.75em;margin-top: 0.75em;}
 
 a:target {border:0;outline: 0;}
 
-
-
+figure#logos{margin-top: 100px; clear:both;}
+img#enspiral{width: 20%; float: left;}
+img#loomio{width: 50%; float: left; margin: 10px 50px 0 0;}
+.clear{display: block; clear: both;}
 @media print {
   body{
     font-family: PT Serif, Georgia;
@@ -76,7 +74,8 @@ a:target {border:0;outline: 0;}
     -moz-column-gap: 100px;
     column-gap: 100px;
   }
-  .page-break { display: block; page-break-before: always; clear: both;}
+  .page { display: block; page-break-after: always; clear: both; position: relative;}
+  .page-number { font-size: 80%; color: #aaa; position: absolute; top: 0; right: 0;}
   hr {page-break-before: always; display: none;}
   figure.pattern {text-align: right; float: right; width: 200px;}
   figure.pattern img {width: 180px; margin-left: 20px;}
