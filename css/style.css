@@ -7,7 +7,7 @@
 
 */
 
-body {font-size: 13pt;color:#222;background:#fbfbfb;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;line-height: 1.4;}
+body {font-size: 13pt;color:#222;background:#fbfbfb;font-family:PT Serif, Georgia, serif;line-height: 1.4;}
 
 h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
 
@@ -63,6 +63,31 @@ figure#logos{margin-top: 100px; clear:both;}
 img#enspiral{width: 20%; float: left;}
 img#loomio{width: 50%; float: left; margin: 10px 50px 0 0;}
 .clear{display: block; clear: both;}
+#about{
+  background: #ddd;
+  font-size: 80%;
+  padding: 1em;
+}
+figure.pattern {text-align: right; float: right; width: 200px;}
+figure.pattern img {width: 180px; margin-left: 20px;}
+
+table{font-size: 80%; border: 1px solid black; border-width: 1px 0 1px 0;}
+td{padding-bottom: 10px; vertical-align: top;}
+thead td{font-weight: bold;}
+
+table,
+table tr td,
+table tr th {
+  page-break-inside: avoid;
+}
+
+@media screen{
+  body{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  p.notes{display: none;}
+}
 @media print {
   body{
     font-family: PT Serif, Georgia;
@@ -74,15 +99,11 @@ img#loomio{width: 50%; float: left; margin: 10px 50px 0 0;}
     -moz-column-gap: 100px;
     column-gap: 100px;
   }
+  #about{display: none;}
   .page { display: block; page-break-after: always; clear: both; position: relative;}
   .page-number { font-size: 80%; color: #aaa; position: absolute; top: 0; right: 0;}
   hr {page-break-before: always; display: none;}
-  figure.pattern {text-align: right; float: right; width: 200px;}
-  figure.pattern img {width: 180px; margin-left: 20px;}
-  p.notes{color: #eee; padding-top: 650px; text-align: right;}
+  p.notes{display: block; color: #eee; padding-top: 650px; text-align: right;}
   p.notes.short{padding-top: 600px;}
-  table{font-size: 80%; border: 1px solid black; border-width: 1px 0 1px 0;}
-  td{padding-bottom: 10px; vertical-align: top;}
-  thead td{font-weight: bold;}
   /*PRINTING ORDER 24,1,2,23, 22,3,4,21, 20,5,6,19, 18,7,8,17, 16,9,10,15, 14,11,12,13*/
 }

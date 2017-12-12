@@ -20,3 +20,6 @@ This work is licensed in the public domain: you can do whatever you like with it
 
 
 
+
+
+<!-- http://www.andrewnoske.com/wiki/Printing_a_booklet_which_staples_in_the_middle -->
